@@ -6,9 +6,9 @@ This project aims for fusing camera data with LIDAR data.
 
 python loop_over_dataset.py
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/track1.png)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/track0.png)
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/RMSE1.png)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse0.png)
 
 
 ## Kalman Filter: filter.py
@@ -31,7 +31,7 @@ python loop_over_dataset.py
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/track1.png)
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/RMSE1.png)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse1.png)
 
 
 ## Track: trackmanagement.py
@@ -50,7 +50,7 @@ python loop_over_dataset.py
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/track2.png)
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/RMSE2.png)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse2.png)
 
 
 ## association.py
@@ -69,7 +69,7 @@ python loop_over_dataset.py
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/track3.png)
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/RMSE3.png)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse3.png)
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/images/animation_step3.avi)
 
@@ -84,7 +84,7 @@ python loop_over_dataset.py
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/track4.png)
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/RMSE4.png)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse4.png)
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/images/animation_step4.avi)
 
