@@ -71,7 +71,7 @@ python loop_over_dataset.py
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse3.png)
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/images/animation_step3.gif)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/animation_step3.gif)
 
 
 ## measurements.py
@@ -86,5 +86,5 @@ python loop_over_dataset.py
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse4.png)
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/images/animation_step4.avi)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/animation_step4.avi)
 
