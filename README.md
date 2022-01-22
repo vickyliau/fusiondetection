@@ -53,7 +53,7 @@ python loop_over_dataset.py
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse2.png)
 
 
-## association.py
+## Associate Measurements: association.py
 
 - training_segment-1005081002024129653_5313_150_5333_150_with_camera_labels.tfrecord
 
@@ -74,7 +74,7 @@ python loop_over_dataset.py
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/animation_step3.gif)
 
 
-## measurements.py
+## SWBAT Fuse Measurements: measurements.py
 
 1. Camera measurements
 
@@ -86,5 +86,5 @@ python loop_over_dataset.py
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse4.png)
 
-![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/animation_step4.avi)
+![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/animation_step4.gif)
 
