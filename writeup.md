@@ -1,6 +1,7 @@
-# Sensor Fusion and Object Detection
+# Writeup: Track 3D-Objects Over Time
 
-This project aims for fusing camera data with LIDAR data. 
+
+# 1. Write a short recap of the four tracking steps and what you implemented there (filter, track management, association, camera fusion). Which results did you achieve? Which part of the project was most difficult for you to complete, and why?
 
 ## Initial Tracking
 
@@ -93,5 +94,21 @@ python loop_over_dataset.py
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/rmse4.png)
 
 ![alt_text](https://github.com/vickyting0910/fusiondetection/blob/main/img/animation_step4.gif)
+
+# 2. Do you see any benefits in camera-lidar fusion compared to lidar-only tracking (in theory and in your concrete results)? 
+
+In this case, camera-lidar fusion may not provide better results than lidar-only tracking. Ideally,  image-lidar fusion expects the better results. While lidar-only tracking well detects the two consistent tracks, image-lidar fusion loses detections of one of tracking. The potential reason may be due to the bad image noises. 
+
+# 3. Which challenges will a sensor fusion system face in real-life scenarios? Did you see any of these challenges in the project?
+
+## unable to detect farther scence, beyond nearby cars
+
+## unable to anticipate the cars from the back beforehand
+
+# 4. Can you think of ways to improve your tracking results in the future?
+
+## Test more scenes for different weather conditions in LIDAR and image to adjust tracking setting
+
+## Optimize thresholds by hyperparameter tuning
 
 
