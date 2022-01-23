@@ -101,13 +101,13 @@ In this case, camera-lidar fusion may not provide better results than lidar-only
 
 # 3. Which challenges will a sensor fusion system face in real-life scenarios? Did you see any of these challenges in the project?
 
-## unable to detect farther scence, beyond nearby cars
+## unable to detect farther scene, beyond nearby cars
 
-## unable to anticipate the cars from the back beforehand
+## unable to anticipate the vehicles from the back beforehand
 
 # 4. Can you think of ways to improve your tracking results in the future?
 
-## Test more scenes for different weather conditions in LIDAR and image to adjust tracking setting
+## Test more scenes for different weather conditions in LIDAR and image to adjust tracking settings
 
 ## Optimize thresholds by hyperparameter tuning
 
