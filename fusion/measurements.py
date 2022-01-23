@@ -164,7 +164,6 @@ class Measurement:
             ############
             # TODO Step 4: initialize camera measurement including z and R 
             ############
-
             self.z = np.zeros((sensor.dim_meas,1)) # measurement vector
             self.z[0] = z[0]
             self.z[1] = z[1]

@@ -64,13 +64,6 @@ class Association:
                 if self.gating(MHD, sensor):
                     self.association_matrix[i,j] = MHD
 
-        #if len(meas_list) > 0:
-        #    self.unassigned_meas = [0]
-        #if len(track_list) > 0:
-        #    self.unassigned_tracks = [0]
-        #if len(meas_list) > 0 and len(track_list) > 0: 
-        #    self.association_matrix = np.matrix([[0]])
-
     def get_closest_track_and_meas(self):
         ############
         # TODO Step 3: find closest track and measurement:
@@ -119,11 +112,9 @@ class Association:
         # TODO Step 3: return True if measurement lies inside gate, otherwise False
         ############
         # check if measurement lies inside gate
-        df = None
-        gate_val = None
         df = 1
         gate_val = params.gating_threshold
-        per = chi2.cdf(MHD, df)
+        per = chi2.cdf(MHD, 1)
         if per <  gate_val:
             return True
         else:
