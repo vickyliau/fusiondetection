@@ -58,7 +58,7 @@ class Sensor:
         if pos_sens[0] > 0: 
             alpha = np.arctan(pos_sens[1]/pos_sens[0]) # calc angle between object and x-axis
             # no normalization needed because returned alpha always lies between [-pi/2, pi/2]
-            if alpha >= self.fov[0] and alpha <= self.fov[1]:
+            if alpha > self.fov[0] and alpha < self.fov[1]:
                 visible = True
                 
         return visible

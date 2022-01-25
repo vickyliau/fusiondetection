@@ -111,11 +111,14 @@ class Association:
         ############
         # TODO Step 3: return True if measurement lies inside gate, otherwise False
         ############
+        if sensor.name == "lidar":
+            df = 2 # LiDAR DOF, features = (x,y,z)
+        elif sensor.name == "camera":
+            df = 1 # camera DOF,features = (x,y)
+        # calculate the Inverse Cumulative Distribution Function (I-CDF) for certain percentile (gating_threshold)
+        limit = chi2.ppf(params.gating_threshold, df=df)
         # check if measurement lies inside gate
-        df = 1
-        gate_val = params.gating_threshold
-        per = chi2.cdf(MHD, 1)
-        if per <  gate_val:
+        if MHD < limit:
             return True
         else:
             return False
@@ -124,11 +127,11 @@ class Association:
         ############
         # TODO Step 3: calculate and return Mahalanobis distance
         ############
-        H = meas.sensor.get_hx(track.x)
-        gamma = np.matrix(meas.z) - H
-        S = meas.R #H*track.P*H.transpose() + meas.R
-        MHD = gamma.transpose()*np.linalg.inv(S)*gamma # Mahalanobis distance formula
-        return MHD
+        H = meas.sensor.get_H(track.x)
+        S_inv = np.linalg.inv(KF.S(track,meas,H))
+        gamma = KF.gamma(track, meas)
+
+        return gamma.T*S_inv*gamma
     
     def associate_and_update(self, manager, meas_list, KF):
         # associate measurements and tracks
